@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/app.css" />
+    <title>Document</title>
+  </head>
+
+  <body class="outfit">
+    <div class="bg-sky-600 py-3 text-white">
+      <img
+        class="mx-auto"
+        width="300px"
+        src="https://approvedscience.com/header-logo.png"
+        alt="logo"
+      />
+    </div>
+    <div class="container mx-auto my-8 lg:px-0 px-4">
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
+        <div class="ml-auto">
+          <div class="flex flex-col items-center space-y-4">
+            <div class="w-full max-w-3xl">
+              <img
+                id="main-image"
+                src="https://wellnessnest.co/cdn/shop/files/shilajit_gummies.webp?v=1772185400&width=1440"
+                class="lg:w-lg rounded-lg"
+                alt="Main Image"
+              />
+            </div>
+
+            <div
+              class="grid grid-cols-4 max-w-lg gap-4"
+              id="thumbnail-container"
+            >
+              <img
+                src="https://wellnessnest.co/cdn/shop/files/hf_20260210_070707_f46821ba-dbb4-4853-b38b-0f9ee22028d3.jpg?v=1772185411&width=1440"
+                class="thumb rounded-lg md:h-24 h-18 object-cover cursor-pointer hover:opacity-80"
+                alt="Thumb 1"
+              />
+              <img
+                src="https://wellnessnest.co/cdn/shop/files/same_root.webp?v=1775804754&width=1440"
+                class="thumb rounded-lg md:h-24 h-18 object-cover cursor-pointer hover:opacity-80"
+                alt="Thumb 2"
+              />
+              <img
+                src="https://wellnessnest.co/cdn/shop/files/hf_20260210_071648_d041e6dd-5331-4cff-b211-c7b4b9f02a91.jpg?v=1772185411&width=1440"
+                class="thumb rounded-lg md:h-24 h-18 object-cover cursor-pointer hover:opacity-80"
+                alt="Thumb 3"
+              />
+              <img
+                src="https://wellnessnest.co/cdn/shop/files/hf_20260210_072035_658899ef-2754-4937-8cfe-db84fb40ccea.png?v=1772185411&width=1440"
+                class="thumb rounded-lg md:h-24 h-18 object-cover cursor-pointer hover:opacity-80"
+                alt="Thumb 4"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-xl mr-auto">
+          <div class="flex gap-2 my-3">
+            <img
+              src="https://wellnessnest.co/cdn/shop/files/gempages_501444340413891578-23c06938-17ba-4735-8476-c485ea460d84.svg?v=3802026430553529671"
+              alt="rating"
+              width="70px"
+            /><small>4.8/5 Excellent | Based on 1,242 Reviews</small>
+          </div>
+          <h1 class="lg:text-4xl text-3xl font-bold lg:leading-snug">
+            Flood your body with the "missing fuel" that powers your energy,
+            drive, and testosterone
+          </h1>
+          <div class="text-[18px]">
+            <strong class="my-4 block"
+              >137,235+ Men Have Ended "Cellular Starvation" and Restored Their
+              Edge with Pure Himalayan Shilajit.
+            </strong>
+
+            <p>
+              Wellness Nest™ Shilajit Essential Extract is designed to reclaim
+              what makes you feel like a man - strength, stamina, and the
+              unshakable confidence that shows in how you move, work, and
+              perform.
+            </p>
+            <br />
+            <p>
+              Just one daily dose helps you reclaim stamina, confidence, and
+              drive - without caffeine, stimulants, or shortcuts.
+            </p>
+            <ul class="my-4">
+              <li class="my-3">
+                <strong>End the "Afternoon Crash":</strong> Restore consistent
+                ATP energy production without jitters.
+              </li>
+              <li class="my-3">
+                <strong>Reignite Natural Drive:</strong> Supply the Zinc &
+                Magnesium your body needs to regulate healthy T-Levels
+                naturally.
+              </li>
+              <li class="my-3">
+                <strong>Stop "Hiding":</strong> Clear brain fog and regain the
+                mental stamina to be present in your life.
+              </li>
+              <li class="my-3">
+                <strong>Lab-Tested Purity:</strong> Gold Grade resin. No
+                fillers. No heavy metals. Just earth.
+              </li>
+            </ul>
+
+            <div class="bg-gray-200 h-60 text-center" id="order-chart">
+              Order Chart placeholder
+            </div>
+            <img
+              src="https://wellnessnest.co/cdn/shop/files/Frame_1000003454_1.webp"
+              alt="payment methods"
+              class="my-3"
+            />
+            <div class="my-3">
+              <ul class="grid grid-cols-2 gap-2 text-[14px] font-light">
+                <li>FREE Shipping For Order Above $70</li>
+                <li>24/7 Customer Service</li>
+                <li>90-Day Money Back Guarantee</li>
+                <li>Over 100,000 Happy Customers</li>
+              </ul>
+            </div>
+
+            <div class="space-y-4">
+              <div class="group border border-gray-300 rounded-2xl">
+                <input type="checkbox" id="q1" class="peer hidden" />
+                <label for="q1" class="block p-3 cursor-pointer font-bold"
+                  >How Does It Work?</label
+                >
+                <div class="hidden peer-checked:block p-2">
+                  <strong
+                    >The Science Behind Wellness Nest™ Shilajit Essential
+                    Extract</strong
+                  >
+                  <p class="my-4">
+                    Most supplements add MORE to your already-overloaded system.
+                  </p>
+                  <p class="my-4">
+                    Shilajit is different. It delivers what's MISSING.
+                  </p>
+                  <p class="my-4">
+                    Your mitochondria (the energy factories in every cell) need
+                    specific trace minerals to produce ATP-your body's energy
+                    currency.
+                  </p>
+                  <p class="my-4">
+                    Modern food doesn't provide them anymore. Soil depletion
+                    means even "healthy" diets leave you running on 15 minerals
+                    when you need 85+.
+                  </p>
+                  <p>Shilajit floods your cells with:</p>
+                  <ul class="my-4">
+                    <li>✅ 85+ ionic trace minerals (in bioavailable form)</li>
+                    <li>
+                      ✅ Fulvic Acid (the "delivery truck" that carries
+                      nutrients directly into cells)
+                    </li>
+                    <li>
+                      ✅ Dibenzo-α-pyrones (compounds that supercharge
+                      mitochondria)
+                    </li>
+                  </ul>
+                  <p class="my-4">
+                    The result? Your cells finally have fuel. Energy production
+                    normalizes. Hormone regulation improves. The "fog" lifts.
+                  </p>
+                  <p class="my-4">
+                    Most men notice the shift within 10-14 days.
+                  </p>
+                </div>
+              </div>
+
+              <div class="group border border-gray-300 rounded-2xl">
+                <input type="checkbox" id="q2" class="peer hidden" />
+                <label for="q2" class="block p-3 cursor-pointer font-bold"
+                  >What Can Our Shilajit Help With?</label
+                >
+                <div class="hidden peer-checked:block p-2">
+                  <strong>⚡ Low Energy & Afternoon Crashes</strong>
+                  <p class="my-4">
+                    Clean, steady energy-without caffeine jitters or evening
+                    crashes.
+                  </p>
+
+                  <strong>🔥 Low Drive & Confidence</strong>
+                  <p class="my-4">
+                    Support healthy testosterone and performance-so your
+                    presence and power return.
+                  </p>
+
+                  <strong>🏋️ Slow Recovery & Soreness</strong>
+                  <p class="my-4">
+                    Mineral support for training resilience, recovery, and fewer
+                    “tired” days.
+                  </p>
+
+                  <strong>🧠 Brain Fog & Poor Focus</strong>
+                  <p class="my-4">
+                    Feel sharper and more decisive when it counts.
+                  </p>
+
+                  <strong>😌 Stress & Irritability</strong>
+                  <p class="my-4">
+                    Nutrient support for calm, composed control under pressure.
+                  </p>
+
+                  <strong>🛌 Sleep Quality</strong>
+                  <p class="my-4">
+                    Better wind-down and deeper overnight recovery.
+                  </p>
+
+                  <strong>🛡️ Immunity & Antioxidant Support</strong>
+                  <p class="my-4">
+                    Backed by 85+ trace minerals and natural antioxidants.
+                  </p>
+
+                  <strong>💥 Bedroom Stamina & Performance</strong>
+                  <p class="my-4">
+                    Stay ready longer, recover faster, and perform with
+                    confidence every time.
+                  </p>
+
+                  <strong>🍆 Morning Vitality & Sexual Confidence</strong>
+                  <p class="my-4">
+                    Consistent morning erections are your body’s sign of
+                    restored hormonal balance - and she’ll notice the difference
+                    before you do.
+                  </p>
+                </div>
+              </div>
+
+              <div class="group border border-gray-300 rounded-2xl">
+                <input type="checkbox" id="q3" class="peer hidden" />
+                <label for="q3" class="block p-3 cursor-pointer font-bold"
+                  >When Will I See Results?</label
+                >
+                <div class="hidden peer-checked:block p-2">
+                  <strong>📅 Days 3–7</strong>
+                  <p class="my-4">
+                    The afternoon slump doesn't hit as hard. Sleep feels deeper.
+                    You wake up without that groggy drag.
+                  </p>
+
+                  <strong>📆 Weeks 2–3</strong>
+                  <p class="my-4">
+                    Focus sharpens. Workouts feel different—more drive, better
+                    recovery. Mood steadies.
+                  </p>
+
+                  <strong>📈 Weeks 4–6</strong>
+                  <p class="my-4">
+                    Energy feels "locked in." Stamina lasts longer. Evenings
+                    aren't wasted. Your partner might comment that you seem...
+                    different.
+                  </p>
+
+                  <strong>🏁 Month 2 and beyond</strong>
+                  <p class="my-4">
+                    The compound effect kicks in. You're not just managing.
+                    You're performing. The version of yourself you remember
+                    starts coming back. This isn't magic. It's what happens when
+                    you give your body what it's been missing for years.
+                  </p>
+                </div>
+              </div>
+
+              <div class="group border border-gray-300 rounded-2xl">
+                <input type="checkbox" id="q4" class="peer hidden" />
+                <label for="q4" class="block p-3 cursor-pointer font-bold"
+                  >How Long Until I Get It?</label
+                >
+                <div class="hidden peer-checked:block p-2">
+                  <p class="my-4">
+                    All orders are assembled and shipped from the USA (with
+                    globally and domestically sourced ingredients). We process
+                    orders within 1–2 business days.
+                  </p>
+                  <p class="my-4">
+                    Most customers in the U.S. receive their package within 3–5
+                    business days.
+                  </p>
+                  <p class="my-4">
+                    You’ll receive a tracking number as soon as your order
+                    ships.
+                  </p>
+                </div>
+              </div>
+
+              <div class="group border border-gray-300 rounded-2xl">
+                <input type="checkbox" id="q5" class="peer hidden" />
+                <label for="q5" class="block p-3 cursor-pointer font-bold"
+                  >Who Can Use It?</label
+                >
+                <div class="hidden peer-checked:block p-2">
+                  <p class="my-4">
+                    Wellness Nest™ Shilajit Essential Extract is for men who
+                    want natural, sustainable performance, without stimulants or
+                    steroids.
+                  </p>
+                  <p class="my-4">Especially helpful for:</p>
+                  <ul class="my-4">
+                    <li>Men 35+ who feel their edge slipping.</li>
+                    <li>Busy professionals with afternoon crashes.</li>
+                    <li>Lifters and athletes wanting faster recovery.</li>
+                    <li>
+                      Men who want drive, confidence, and presence
+                      back—naturally.
+                    </li>
+                  </ul>
+                  <p class="my-4">
+                    Gentle on the stomach. No caffeine. No stimulants. No
+                    synthetic additives.
+                  </p>
+                </div>
+              </div>
+
+              <div class="group border border-gray-300 rounded-2xl">
+                <input type="checkbox" id="q6" class="peer hidden" />
+                <label for="q6" class="block p-3 cursor-pointer font-bold"
+                  >90-day Money-back Guarantee?</label
+                >
+                <div class="hidden peer-checked:block p-2">
+                  <p class="my-4">
+                    We stand behind our formulas — but we also understand
+                    results can vary.
+                  </p>
+                  <p class="my-4">
+                    That’s why your first order is protected by our 90-Day
+                    Money-Back Guarantee, so you can try Wellness Nest
+                    completely risk-free.
+                  </p>
+                  <p class="my-4">How it works:</p>
+                  <ul class="my-4">
+                    <li>
+                      ✅ Applies to your first purchase of any product or bundle
+                    </li>
+                    <li>
+                      ✅ Covers one-time orders and first subscription shipments
+                    </li>
+                    <li>✅ Valid for up to 3 units per product</li>
+                    <li>✅ Request within 90 days of delivery</li>
+                  </ul>
+                  <p class="my-4">
+                    If you’re not satisfied, simply contact our Customer
+                    Experience Team with your order number.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-y border-gray-300 bg-[#fdfdfd]">
+      <div class="container mx-auto py-14">
+        <h2 class="text-[32px] font-bold text-center my-2">
+          See Why Men Add It to Their Daily Ritual
+        </h2>
+        <p class="text-center text-xl font-light">
+          In a recent customer survey:
+        </p>
+
+        <div class="grid lg:grid-cols-4 grid-cols-2 gap-8 my-6 lg:px-0 px-4">
+          <div class="lg:px-6 border-r border-gray-300">
+            <span
+              class="lg:text-6xl text-5xl text-center block font-medium text-sky-600"
+              >83%</span
+            >
+            <p class="text-[18px] font-light text-center">
+              Reported stronger, more consistent energy within 7 days*
+            </p>
+          </div>
+
+          <div class="lg:px-6 lg:border-r lg:border-gray-300">
+            <span
+              class="lg:text-6xl text-5xl text-center block font-medium text-sky-600"
+              >71%</span
+            >
+            <p class="text-[18px] font-light text-center">
+              Noticed improved mood and focus within 2 weeks*
+            </p>
+          </div>
+
+          <div class="lg:px-6 border-r border-gray-300">
+            <span
+              class="lg:text-6xl text-5xl text-center block font-medium text-sky-600"
+              >62%</span
+            >
+            <p class="text-[18px] font-light text-center">
+              Experienced higher drive and better gym performance within the
+              first month*
+            </p>
+          </div>
+
+          <div class="lg:px-6">
+            <span
+              class="lg:text-6xl text-5xl text-center block font-medium text-sky-600"
+              >54%</span
+            >
+            <p class="text-[18px] font-light text-center">
+              Said their partner noticed the difference before they did*
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-10 bg-sky-50">
+      <div class="container mx-auto">
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+          <div class="lg:w-xl ml-auto lg:px-0 px-4">
+            <h2 class="text-[32px] font-bold">
+              One Ingredient. Endless Performance Potential.
+            </h2>
+            <div class="text-[18px]">
+              <p class="my-6">
+                Unlike blends with long, unpronounceable labels, Wellness Nest™
+                Shilajit Essential Extract keeps it simple:
+                <strong
+                  >100% Pure Himalayan Shilajit Resin (~70% Fulvic
+                  Acid).</strong
+                >
+              </p>
+              <p>Sourcing & Purity:</p>
+              <ul
+                class="list-inside lg:leading-11 my-4 list-image-[url(../images/check.png)]"
+              >
+                <li>
+                  Sourced <strong>above 18,000 ft</strong> in the Himalayas
+                </li>
+                <li><strong>Lab-tested</strong> for purity & potency</li>
+                <li><strong>No fillers, non-GMO, gluten-free</strong></li>
+                <li>
+                  Manufactured in an
+                  <strong>FDA-registered, GMP facility</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-auto lg:px-0 px-4">
+            <img
+              src="https://wellnessnest.co/cdn/shop/files/1724845569-4.webp?v=15894483656593834787"
+              alt="image-2"
+              class="w-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container mx-auto py-10">
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+          <div class="ml-auto lg:pt-10 lg:px-0 px-4">
+            <img
+              src="https://wellnessnest.co/cdn/shop/files/Shilajit_Resin_Funnelish.png?v=6136701630946004284&width=888"
+              alt="image-3"
+              class="w-xl"
+            />
+          </div>
+          <div class="lg:w-xl mr-auto px-4">
+            <h2 class="text-[32px] font-bold text-center my-4">
+              Special Offer On Now!
+            </h2>
+            <p class="text-[18px] text-center">
+              Try Wellness Nest™ Shilajit Essential Extract NOW Risk-Free at an
+              All Time Low Price!
+            </p>
+            <span class="text-[18px] text-center font-bold underline block"
+              >Act Now and You'll Get:</span
+            >
+            <ul
+              class="text-[18px] list-inside lg:leading-11 my-4 list-image-[url(../images/check.png)]"
+            >
+              <li>
+                <strong>50% OFF</strong> - Wellness Nest™ Shilajit Essential
+                Extract
+              </li>
+              <li><strong>90-Day Money-back Guarantee</strong></li>
+              <li>
+                <strong>FREE Shipping</strong> For Order Above $70 ($7 value)
+              </li>
+              <li>
+                <strong>FREE E-Book:</strong> The 72-Hour Ignition Protocol ($27
+                value)
+              </li>
+              <li>
+                <strong>FREE E-Book:</strong> 5 Absorption Killers Exposed ($39
+                value)
+              </li>
+              <li>
+                <strong>FREE E-Book:</strong> Deep Sleep Testosterone Reset ($49
+                value)
+              </li>
+            </ul>
+            <a
+              href="#order-chart"
+              class="uppercase bg-sky-600 text-white w-full p-4 block text-center rounded-xl text-2xl font-bold"
+              >try it now</a
+            >
+            <img
+              src="https://wellnessnest.co/cdn/shop/files/Frame_1000003454_1.webp"
+              alt="payment methods"
+              class="my-3"
+            />
+
+            <div class="my-3">
+              <ul class="grid grid-cols-2 gap-3 text-[14px] font-light">
+                <li>FREE Shipping For Order Above $70</li>
+                <li>24/7 Customer Service</li>
+                <li>90-Day Money Back Guarantee</li>
+                <li>Over 100,000 Happy Customers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-white shadow-2xl py-4 fixed bottom-0 left-0 w-full px-4"
+      id="fixed-footer"
+    >
+      <a
+        href="#order-chart"
+        class="uppercase bg-sky-600 text-white p-4 text-center rounded-xl text-2xl font-bold lg:w-lg block mx-auto"
+        >try it now</a
+      >
+    </div>
+
+    <script>
+      window.onscroll = function () {
+        if (
+          window.innerHeight + window.scrollY >=
+          document.body.offsetHeight - 200
+        ) {
+          document.getElementById("fixed-footer").classList.add("hidden");
+        } else {
+          document.getElementById("fixed-footer").classList.remove("hidden");
+        }
+      };
+
+      document
+        .getElementById("thumbnail-container")
+        .addEventListener("click", function (e) {
+          if (e.target.classList.contains("thumb")) {
+            document.getElementById("main-image").src = e.target.src;
+          }
+        });
+    </script>
+  </body>
+</html>
