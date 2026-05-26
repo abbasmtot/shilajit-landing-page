@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
-
 .outfit {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.main-button {
+  @apply uppercase bg-yellow-400 hover:bg-yellow-500 text-black w-full p-4 block text-center rounded-xl text-2xl font-bold;
 }

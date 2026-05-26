@@ -120,10 +120,16 @@
 
               <!-- package -->
               <div
-                class="border border-gray-300 p-2 rounded-xl select-none my-4"
+                class="package-box border border-gray-300 p-5 rounded-xl select-none my-4"
               >
-                <div class="flex gap-3">
-                  <input type="radio" name="package" id="package-1" />
+                <div class="flex gap-3 items-center">
+                  <input
+                    type="radio"
+                    class="w-6 h-6 text-sky-600"
+                    data-item-url="http://approvedscience.com/quiz?sku=ASSHI010000"
+                    name="packages"
+                    id="package-1"
+                  />
                   <label for="package-1" class="flex w-full">
                     <div class="text-left">
                       <span class="text-xl font-bold">1 Bottle</span>
@@ -132,10 +138,7 @@
                     </div>
 
                     <div class="ml-auto text-right">
-                      <span class="block text-xl">$39.96</span>
-                      <span class="block text-sm line-through text-gray-500"
-                        >$99.95</span
-                      >
+                      <span class="block text-xl">$59.95</span>
                     </div>
                   </label>
                 </div>
@@ -143,10 +146,21 @@
 
               <!-- package -->
               <div
-                class="border-2 border-sky-300 p-2 rounded-xl select-none my-4"
+                class="package-box border border-gray-300 p-5 rounded-xl select-none my-4 relative"
               >
-                <div class="flex gap-3">
-                  <input type="radio" name="package" id="package-2" checked />
+                <span
+                  class="absolute top-0 right-4 px-2 bg-sky-600 text-white text-sm rounded-b-md"
+                  >#1 Best Seller</span
+                >
+                <div class="flex gap-3 items-center">
+                  <input
+                    type="radio"
+                    class="w-6 h-6 text-sky-600"
+                    data-item-url="http://approvedscience.com/quiz?sku=ASSHI020000"
+                    name="packages"
+                    id="package-2"
+                    checked
+                  />
                   <label for="package-2" class="flex w-full">
                     <div class="text-left">
                       <span class="text-xl font-bold">2 Bottles</span>
@@ -163,6 +177,39 @@
                   </label>
                 </div>
               </div>
+
+              <!-- package -->
+              <div
+                class="package-box border border-gray-300 p-5 rounded-xl select-none my-4"
+              >
+                <div class="flex gap-3 items-center">
+                  <input
+                    type="radio"
+                    class="w-6 h-6 text-sky-600"
+                    data-item-url="http://approvedscience.com/quiz?sku=ASSHI030000"
+                    name="packages"
+                    id="package-3"
+                  />
+                  <label for="package-3" class="flex w-full">
+                    <div class="text-left">
+                      <span class="text-xl font-bold">3 Bottles</span>
+                      <br />
+                      <span class="text-sm">$1.24 Per Gummy, Save $59.99</span>
+                    </div>
+
+                    <div class="ml-auto text-right">
+                      <span class="block text-xl">$95.85</span>
+                      <span class="block text-sm line-through text-gray-500"
+                        >$179.85</span
+                      >
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <a href="" class="main-button" id="add-to-cart-btn"
+                >Add to Cart</a
+              >
             </div>
             <img
               src="https://wellnessnest.co/cdn/shop/files/Frame_1000003454_1.webp"
@@ -551,11 +598,7 @@
                 value)
               </li>
             </ul>
-            <a
-              href="#order-chart"
-              class="uppercase bg-sky-600 text-white w-full p-4 block text-center rounded-xl text-2xl font-bold"
-              >try it now</a
-            >
+            <a href="#order-chart" class="main-button">try it now</a>
             <img
               src="https://wellnessnest.co/cdn/shop/files/Frame_1000003454_1.webp"
               alt="payment methods"
@@ -579,18 +622,17 @@
       class="bg-white shadow-2xl py-4 fixed bottom-0 left-0 w-full px-4"
       id="fixed-footer"
     >
-      <a
-        href="#order-chart"
-        class="uppercase bg-sky-600 text-white p-4 text-center rounded-xl text-2xl font-bold lg:w-lg block mx-auto"
-        >try it now</a
-      >
+      <div class="lg:w-lg mx-auto">
+        <a href="#order-chart" class="main-button">try it now</a>
+      </div>
     </div>
 
     <script>
       window.onscroll = function () {
         if (
           window.innerHeight + window.scrollY >=
-          document.body.offsetHeight - 200
+            document.body.offsetHeight - 200 ||
+          window.innerHeight + window.scrollY <= 2400
         ) {
           document.getElementById("fixed-footer").classList.add("hidden");
         } else {
@@ -605,6 +647,56 @@
             document.getElementById("main-image").src = e.target.src;
           }
         });
+
+      const radios = document.querySelectorAll('input[name="packages"]');
+      const addToCartBtn = document.getElementById("add-to-cart-btn");
+
+      // 1. Define a reusable function to update the UI states
+      function updatePackageStyles(selectedRadio) {
+        radios.forEach((radio) => {
+          const box = radio.closest(".package-box");
+          if (!box) return;
+
+          if (radio === selectedRadio) {
+            // Style the active/checked box
+            box.classList.remove("border-gray-300");
+            box.classList.remove("border");
+            box.classList.add("border-sky-600");
+            box.classList.add("border-2");
+
+            // Update the button URL
+            if (radio.dataset.itemUrl) {
+              addToCartBtn.href = radio.dataset.itemUrl;
+            }
+          } else {
+            // Reset the inactive/unchecked boxes
+            box.classList.remove("border-sky-600");
+            box.classList.remove("border-2");
+            box.classList.add("border-gray-300");
+            box.classList.add("border");
+          }
+        });
+      }
+
+      // 2. Initialize: Find the default checked radio (or fallback to the first one)
+      const defaultChecked =
+        document.querySelector('input[name="packages"]:checked') || radios[0];
+
+      if (defaultChecked) {
+        updatePackageStyles(defaultChecked);
+      } else {
+        // Absolute fallback if no radios exist or none are selected yet
+        addToCartBtn.href = "http://approvedscience.com/quiz?sku=ASSHI030000";
+      }
+
+      // 3. Listen for future changes
+      radios.forEach((radio) => {
+        radio.addEventListener("change", function () {
+          if (this.checked) {
+            updatePackageStyles(this);
+          }
+        });
+      });
     </script>
   </body>
 </html>
