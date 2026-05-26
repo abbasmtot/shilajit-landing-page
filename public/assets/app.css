@@ -270,6 +270,9 @@
   .my-8 {
     margin-block: calc(var(--spacing) * 8);
   }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
   .mr-auto {
     margin-right: auto;
   }
@@ -293,6 +296,9 @@
   }
   .hidden {
     display: none;
+  }
+  .inline-block {
+    display: inline-block;
   }
   .table {
     display: table;
