@@ -667,6 +667,16 @@
     -webkit-user-select: none;
     user-select: none;
   }
+  .group-has-checked\:block {
+    &:is(:where(.group):has(*:checked) *) {
+      display: block;
+    }
+  }
+  .group-has-checked\:hidden {
+    &:is(:where(.group):has(*:checked) *) {
+      display: none;
+    }
+  }
   .group-has-\[\:checked\]\:block {
     &:is(:where(.group):has(*:is(:checked)) *) {
       display: block;
@@ -675,6 +685,13 @@
   .group-has-\[\:checked\]\:hidden {
     &:is(:where(.group):has(*:is(:checked)) *) {
       display: none;
+    }
+  }
+  .group-has-checked\:group-has-\[\:checked\]\:hidden {
+    &:is(:where(.group):has(*:checked) *) {
+      &:is(:where(.group):has(*:is(:checked)) *) {
+        display: none;
+      }
     }
   }
   .peer-checked\:block {
