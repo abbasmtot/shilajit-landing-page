@@ -188,17 +188,17 @@
 
               <!-- package -->
               <div
-                class="package-box border border-gray-300 p-5 rounded-xl select-none my-4"
+                class="package-box border border-gray-300 rounded-xl select-none my-4 relative"
               >
                 <div class="flex gap-3 items-center">
                   <input
                     type="radio"
-                    class="w-6 h-6 text-sky-600"
+                    class="w-6 h-6 text-sky-600 absolute left-5"
                     data-item-url="http://approvedscience.com/quiz?sku=ASSHI010000"
                     name="packages"
                     id="package-1"
                   />
-                  <label for="package-1" class="flex w-full">
+                  <label for="package-1" class="flex w-full py-5 pr-5 pl-15">
                     <div class="text-left">
                       <span class="text-xl font-bold">1 Bottle</span>
                       <br />
@@ -217,22 +217,25 @@
 
               <!-- package -->
               <div
-                class="package-box border border-gray-300 p-5 rounded-xl select-none my-4 relative"
+                class="package-box border border-gray-300 rounded-xl select-none my-4 relative"
               >
                 <span
-                  class="absolute top-0 right-4 px-2 bg-sky-600 text-white text-sm rounded-b-md"
+                  class="absolute z-0 top-0 right-4 px-2 bg-sky-600 text-white text-sm rounded-b-md"
                   >#1 Best Seller</span
                 >
                 <div class="flex gap-3 items-center">
                   <input
                     type="radio"
-                    class="w-6 h-6 text-sky-600"
+                    class="w-6 h-6 text-sky-600 absolute left-5 z-10"
                     data-item-url="http://approvedscience.com/quiz?sku=ASSHI020000"
                     name="packages"
                     id="package-2"
                     checked
                   />
-                  <label for="package-2" class="flex w-full">
+                  <label
+                    for="package-2"
+                    class="flex w-full py-5 pr-5 pl-15 z-10"
+                  >
                     <div class="text-left">
                       <span class="text-xl font-bold">2 Bottles</span>
                       <br />
@@ -251,17 +254,17 @@
 
               <!-- package -->
               <div
-                class="package-box border border-gray-300 p-5 rounded-xl select-none my-4"
+                class="package-box border border-gray-300 rounded-xl select-none my-4 relative"
               >
                 <div class="flex gap-3 items-center">
                   <input
                     type="radio"
-                    class="w-6 h-6 text-sky-600"
+                    class="w-6 h-6 text-sky-600 left-5 absolute"
                     data-item-url="http://approvedscience.com/quiz?sku=ASSHI030000"
                     name="packages"
                     id="package-3"
                   />
-                  <label for="package-3" class="flex w-full">
+                  <label for="package-3" class="flex w-full py-5 pr-5 pl-15">
                     <div class="text-left">
                       <span class="text-xl font-bold">3 Bottles</span>
                       <br />
@@ -283,7 +286,7 @@
               >
             </div>
             <img
-              src="images/payments.webp"
+              src="images/payment-method-B.png"
               alt="payment methods"
               class="my-3"
             />
@@ -1034,7 +1037,7 @@
             </ul>
             <a href="#order-chart" class="main-button">try it now</a>
             <img
-              src="images/payments.webp"
+              src="images/payment-method-B.png"
               alt="payment methods"
               class="my-3"
             />
