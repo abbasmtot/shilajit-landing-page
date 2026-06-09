@@ -605,6 +605,9 @@
   .bg-sky-200 {
     background-color: var(--color-sky-200);
   }
+  .bg-sky-300 {
+    background-color: var(--color-sky-300);
+  }
   .bg-sky-400 {
     background-color: var(--color-sky-400);
   }
@@ -637,6 +640,9 @@
   }
   .bg-yellow-300 {
     background-color: var(--color-yellow-300);
+  }
+  .bg-yellow-400 {
+    background-color: var(--color-yellow-400);
   }
   .bg-yellow-500 {
     background-color: var(--color-yellow-500);
@@ -688,6 +694,9 @@
   }
   .pe-3 {
     padding-inline-end: calc(var(--spacing) * 3);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
   }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
@@ -755,6 +764,9 @@
   .text-gray-600 {
     color: var(--color-gray-600);
   }
+  .text-gray-700 {
+    color: var(--color-gray-700);
+  }
   .text-gray-800 {
     color: var(--color-gray-800);
   }
@@ -773,8 +785,14 @@
   .text-white {
     color: var(--color-white);
   }
+  .text-yellow-400 {
+    color: var(--color-yellow-400);
+  }
   .text-yellow-500 {
     color: var(--color-yellow-500);
+  }
+  .text-yellow-600 {
+    color: var(--color-yellow-600);
   }
   .line-through {
     text-decoration-line: line-through;
